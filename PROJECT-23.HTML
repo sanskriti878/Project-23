@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PROJECT 23</title>
+<link rel="stylesheet" href="PROJECT-23.css">
+</head>
+<body>
+<h1>WAP to format the teacher details in XML with CSS using external DTD</h1>
+<h2>What is a XML?</H2>
+<ul>
+<li class="disc">XML stands for eXtensible Markup Language.</li>
+<li id="square">XML is a markup language much like HTML.</li>
+<li class="disc">XML was designed to store and transport data.</li>
+<li id="square">XML was designed to be self-descriptive.</li>
+<li class="disc">XML is a W3C Recommendation.</li>
+</ul>
+<h2>What is a DTD?</h2>
+<p>A DTD is a Document Type Definition.A DTD defines the structure and the legal elements and attributes of an XML document.</p>
+<h2>Why Use a DTD?</h2>
+<p>With a DTD, independent groups of people can agree on a standard DTD for interchanging data.An application can use a DTD to verify that XML data is valid.</p>
+<h2>An External DTD Declaration</h2>
+<p>If the DTD is declared in an external file, the <!DOCTYPE> definition must contain a reference to the DTD file:</p>
+<a href="PROJECT-23.XML">View XML File>></a>
+<h2>The DTD above is interpreted like this:</h2>
+<ul>
+<li class="disc"><b>!DOCTYPE note</b> defines that the root element of this document is note.</li>
+<li id="square"><b>!ELEMENT note</b> defines that the note element must contain four elements: "to,from,heading,body".</li>
+<li class="disc"><b>!ELEMENT to</b> defines the to element to be of type "#PCDATA"</li>
+<li id="square"><b>!ELEMENT from</b> defines the from element to be of type "#PCDATA"</li>
+<li class="disc"><b>!ELEMENT heading</b> defines the heading element to be of type "#PCDATA"</li>
+<li id="square"><b>!ELEMENT body</b> defines the body element to be of type "#PCDATA"</li>
+</ul>
+</body>
+</html>
